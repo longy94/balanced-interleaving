@@ -17,6 +17,11 @@ As a web service, quick response is more important than space usage. And conside
 New posts and old posts are generated when application starts and won't change, so the result won't change with the same request.
 
 # Test
+Run `DemoApplication` <br/>
+Input to browser
+http://localhost:8080/interleaving/{userId}?page={page}&per_page={perPage} <br/>
+
+# Unit Test
 Normal case and error cases are listed in `DemoApplicationTests`.<br/>
 Old posts is an ascending list without any duplicate and gap ranging from `1` to `n`.<br>
 New posts is generated randomly. You can also customize input by returning your own list in `DemoApplicationTests#createNewPosts()`
